@@ -157,7 +157,7 @@ namespace LoginForm
 
                     if (responseMessage == "Success")
                     {
-                        Dashboard dashboard = new Dashboard(username); // Truyền username
+                        ListEmails dashboard = new ListEmails(username); // Truyền username
                         this.Hide();
                         dashboard.Show();
                     }
