@@ -239,7 +239,7 @@ namespace LoginForm
 
         private void linklblLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new LoginForm().Show();
+            new Login().Show();
             this.Hide();
         }
 

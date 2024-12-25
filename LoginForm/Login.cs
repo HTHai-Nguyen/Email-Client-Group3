@@ -13,9 +13,9 @@ using System.Net.Sockets;
 
 namespace LoginForm
 {
-    public partial class LoginForm : Form
+    public partial class Login : Form
     {
-        public LoginForm()
+        public Login()
         {
             InitializeComponent();
             txtUsername.Select();

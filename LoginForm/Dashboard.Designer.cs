@@ -34,8 +34,6 @@ namespace LoginForm
             this.lblWelcome = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.chatbtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClose
@@ -45,10 +43,9 @@ namespace LoginForm
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
-            this.btnClose.Location = new System.Drawing.Point(1215, -4);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(1310, -2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(67, 62);
+            this.btnClose.Size = new System.Drawing.Size(50, 50);
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -60,10 +57,9 @@ namespace LoginForm
             this.linklblLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklblLogout.ForeColor = System.Drawing.Color.Teal;
             this.linklblLogout.LinkColor = System.Drawing.Color.Teal;
-            this.linklblLogout.Location = new System.Drawing.Point(16, 15);
-            this.linklblLogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linklblLogout.Location = new System.Drawing.Point(12, 12);
             this.linklblLogout.Name = "linklblLogout";
-            this.linklblLogout.Size = new System.Drawing.Size(97, 31);
+            this.linklblLogout.Size = new System.Drawing.Size(87, 29);
             this.linklblLogout.TabIndex = 12;
             this.linklblLogout.TabStop = true;
             this.linklblLogout.Text = "Logout";
@@ -74,10 +70,9 @@ namespace LoginForm
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.10909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Teal;
-            this.lblWelcome.Location = new System.Drawing.Point(468, 7);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(351, 6);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(325, 59);
+            this.lblWelcome.Size = new System.Drawing.Size(295, 53);
             this.lblWelcome.TabIndex = 14;
             this.lblWelcome.Text = "WELCOME! ";
             // 
@@ -86,52 +81,38 @@ namespace LoginForm
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.10909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Teal;
-            this.lblName.Location = new System.Drawing.Point(919, 7);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(689, 6);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(40, 59);
+            this.lblName.Size = new System.Drawing.Size(36, 53);
             this.lblName.TabIndex = 14;
             this.lblName.Text = " ";
             // 
             // chatbtn
             // 
-            this.chatbtn.Location = new System.Drawing.Point(513, 203);
+            this.chatbtn.Location = new System.Drawing.Point(39, 104);
+            this.chatbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chatbtn.Name = "chatbtn";
-            this.chatbtn.Size = new System.Drawing.Size(223, 63);
+            this.chatbtn.Size = new System.Drawing.Size(167, 51);
             this.chatbtn.TabIndex = 15;
             this.chatbtn.Text = "Chat";
             this.chatbtn.UseVisualStyleBackColor = true;
             this.chatbtn.Click += new System.EventHandler(this.chatbtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LoginForm.Properties.Resources.Wallpaper_02;
-            this.pictureBox1.Location = new System.Drawing.Point(-16, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1298, 645);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1362, 865);
             this.Controls.Add(this.chatbtn);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linklblLogout);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,7 +121,6 @@ namespace LoginForm
         #endregion
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.LinkLabel linklblLogout;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button chatbtn;
