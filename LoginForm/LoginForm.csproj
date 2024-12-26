@@ -58,6 +58,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmailCompose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailCompose.Designer.cs">
+      <DependentUpon>EmailCompose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailCompose.resx">
+      <DependentUpon>EmailCompose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -124,6 +133,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment-icon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
