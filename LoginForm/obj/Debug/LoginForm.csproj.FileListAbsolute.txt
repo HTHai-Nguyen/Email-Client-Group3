@@ -62,3 +62,6 @@ D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.csproj.Gene
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.pdb
+C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.exe
+C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.pdb
