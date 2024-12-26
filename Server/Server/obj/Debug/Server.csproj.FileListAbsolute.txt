@@ -71,3 +71,26 @@ C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-T
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server\Server\obj\Debug\Server.csproj.Up2Date
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server\Server\obj\Debug\Server.exe
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server\Server\obj\Debug\Server.pdb
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\ServerDatabase.mdf
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\ServerDatabase_log.ldf
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\Server.exe.config
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\Server.exe
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\Server.pdb
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\EntityFramework.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\EntityFramework.SqlServer.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\System.Data.SQLite.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\EntityFramework.xml
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\EntityFramework.SqlServer.xml
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\System.Data.SQLite.xml
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.Form1.resources
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.exe
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\obj\Debug\Server.pdb
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\x86\sqlite3.dll
+D:\Studyspace\WindowsForms\EmailClient\Server\Server\bin\Debug\x64\sqlite3.dll

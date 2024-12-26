@@ -29,7 +29,7 @@ namespace Server
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server\Server\ServerDatabase.mdf"";Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Studyspace\WindowsForms\EmailClient\Server\Server\ServerDatabase.mdf;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
 
             try
