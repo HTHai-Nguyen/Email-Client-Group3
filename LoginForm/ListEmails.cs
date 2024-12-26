@@ -55,13 +55,15 @@ namespace LoginForm
                 // Tạo và hiển thị form chi tiết
                 DetailForm detailForm = new DetailForm(selectedEmail);
                 detailForm.ShowDialog(this); // Sử dụng ShowDialog để chặn form list
+                
             }
+           
         }
 
         private List<Email> emails;
         
 
-        //Lấy tạm sample để test thử tính năng đọc email, có thể sẽ x
+        //Lấy tạm sample để test thử tính năng đọc email, sẽ xóa khi dùng với database
         private void LoadSampleEmails()
         {
             emails = new List<Email>

@@ -148,7 +148,7 @@ namespace LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 1150);
+            this.ClientSize = new System.Drawing.Size(1100, 923);
             this.Controls.Add(this.btnCompose);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWelcome);

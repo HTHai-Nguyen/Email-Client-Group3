@@ -73,6 +73,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReplyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplyForm.Designer.cs">
+      <DependentUpon>ReplyForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DetailForm.resx">
       <DependentUpon>DetailForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplyForm.resx">
+      <DependentUpon>ReplyForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

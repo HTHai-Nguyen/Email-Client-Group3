@@ -11,3 +11,4 @@ D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe.config
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.pdb
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.ListEmails.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.ReplyForm.resources

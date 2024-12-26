@@ -34,8 +34,8 @@ namespace LoginForm
             this.lblDate = new System.Windows.Forms.Label();
             this.lblFrom = new System.Windows.Forms.Label();
             this.txtContent = new System.Windows.Forms.TextBox();
-            this.btnReply = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnReply = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -82,23 +82,13 @@ namespace LoginForm
             // txtContent
             // 
             this.txtContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContent.Location = new System.Drawing.Point(16, 221);
+            this.txtContent.Location = new System.Drawing.Point(16, 189);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
             this.txtContent.ReadOnly = true;
             this.txtContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtContent.Size = new System.Drawing.Size(1070, 520);
+            this.txtContent.Size = new System.Drawing.Size(1002, 574);
             this.txtContent.TabIndex = 5;
-            // 
-            // btnReply
-            // 
-            this.btnReply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReply.Location = new System.Drawing.Point(972, 149);
-            this.btnReply.Name = "btnReply";
-            this.btnReply.Size = new System.Drawing.Size(94, 46);
-            this.btnReply.TabIndex = 6;
-            this.btnReply.Text = "Reply";
-            this.btnReply.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
@@ -107,7 +97,7 @@ namespace LoginForm
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
-            this.btnClose.Location = new System.Drawing.Point(1027, 0);
+            this.btnClose.Location = new System.Drawing.Point(961, 1);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 69);
@@ -116,13 +106,24 @@ namespace LoginForm
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnReply
+            // 
+            this.btnReply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReply.Location = new System.Drawing.Point(920, 134);
+            this.btnReply.Name = "btnReply";
+            this.btnReply.Size = new System.Drawing.Size(89, 39);
+            this.btnReply.TabIndex = 20;
+            this.btnReply.Text = "Reply";
+            this.btnReply.UseVisualStyleBackColor = true;
+            this.btnReply.Click += new System.EventHandler(this.btnReply_Click_1);
+            // 
             // DetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 1150);
-            this.Controls.Add(this.btnClose);
+            this.ClientSize = new System.Drawing.Size(1035, 785);
             this.Controls.Add(this.btnReply);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.lblSubject);
             this.Controls.Add(this.lblDate);
@@ -144,7 +145,7 @@ namespace LoginForm
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblFrom;
         private System.Windows.Forms.TextBox txtContent;
-        private System.Windows.Forms.Button btnReply;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnReply;
     }
 }

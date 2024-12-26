@@ -12,12 +12,14 @@ namespace LoginForm
 {
     public partial class DetailForm : Form
     {
+        private Email currentEmail;
 
         public DetailForm(Email email)
         {
             InitializeComponent();
             DisplayEmail(email);
             btnBack.Click += btnBack_Click;
+            currentEmail = email;
 
             //Controls 
             this.Controls.AddRange(new Control[]
@@ -44,6 +46,13 @@ namespace LoginForm
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnReply_Click_1(object sender, EventArgs e)
+        {
+            ReplyForm replyForm = new ReplyForm(currentEmail);
+            replyForm.ShowDialog(this);
+
         }
     }
 }
