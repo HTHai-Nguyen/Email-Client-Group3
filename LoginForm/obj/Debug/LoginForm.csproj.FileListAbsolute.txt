@@ -53,9 +53,7 @@ D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe.config
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.pdb
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
-D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.ClientChat.resources
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Dashboard.resources
-D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.LoginForm.resources
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Register.resources
 D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
@@ -65,3 +63,5 @@ D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.pdb
 C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
 C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.exe
 C:\_dz\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.pdb
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.EmailCompose.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Login.resources

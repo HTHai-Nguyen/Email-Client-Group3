@@ -96,7 +96,6 @@ namespace LoginForm
             this.chatbtn.TabIndex = 15;
             this.chatbtn.Text = "Chat";
             this.chatbtn.UseVisualStyleBackColor = true;
-            this.chatbtn.Click += new System.EventHandler(this.chatbtn_Click);
             // 
             // Dashboard
             // 

@@ -16,7 +16,7 @@ namespace LoginForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmailCompose());
+            Application.Run(new Login());
         }
     }
 }

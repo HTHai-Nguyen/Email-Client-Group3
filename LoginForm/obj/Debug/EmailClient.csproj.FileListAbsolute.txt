@@ -1,0 +1,12 @@
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe.config
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.exe
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\bin\Debug\LoginForm.pdb
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.EmailCompose.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Login.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.Register.resources
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\EmailClient.csproj.GenerateResource.cache
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\EmailClient.csproj.CoreCompileInputs.cache
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.exe
+D:\Studyspace\WindowsForms\EmailClient\LoginForm\obj\Debug\LoginForm.pdb
