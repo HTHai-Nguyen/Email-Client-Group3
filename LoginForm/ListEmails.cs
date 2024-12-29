@@ -17,6 +17,8 @@ namespace LoginForm
         public ListEmails(string username)
         {
             this.username = username;
+            InitializeComponent();
+            LoadSampleEmails();
             lblName.Text = username;
         }
 
