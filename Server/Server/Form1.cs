@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace Server
 {
     public partial class Form1 : Form
@@ -29,7 +30,7 @@ namespace Server
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server\Server\ServerDatabase.mdf"";Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Thanh\[4.2]NETWORK-PROGRAMMING\DoAn1\Email-Client-Group3\Server\Server\ServerDatabase.mdf;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
 
             try
@@ -72,82 +73,147 @@ namespace Server
                 string clientInfo = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                 string[] details = clientInfo.Split(':');
 
-                if (details.Length == 3) // Đối với đăng ký
+                string action = details[0];
+
+                switch (action)
                 {
-                    string username = details[0];
-                    string email = details[1];
-                    string password = details[2];
+                    case "REGISTER":
+                        HandleRegistration(details, stream);
+                        break;
 
-                    // Kiểm tra username đã tồn tại
-                    string checkUsername = "SELECT COUNT(*) FROM Register WHERE username = @username";
-                    using (SqlCommand cmdCheck = new SqlCommand(checkUsername, sqlConnection))
-                    {
-                        cmdCheck.Parameters.AddWithValue("@username", username);
-                        int userCount = (int)cmdCheck.ExecuteScalar();
-                        if (userCount > 0)
-                        {
-                            byte[] responseData = Encoding.UTF8.GetBytes("Username already exists");
-                            stream.Write(responseData, 0, responseData.Length);
-                            return;
-                        }
-                    }
+                    case "LOGIN":
+                        HandleLogin(details, stream);
+                        break;
 
-                    // Lưu thông tin người dùng
-                    string registerQuery = "INSERT INTO Register (username, email, password) VALUES (@username, @email, @password)";
-                    using (SqlCommand cmd = new SqlCommand(registerQuery, sqlConnection))
-                    {
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Cập nhật giao diện hiển thị
-                    Invoke(new Action(() =>
-                    {
-                        lstChat.Items.Add($"User {username} has signed up.");
-                    }));
-
-                    // Gửi phản hồi cho client
-                    byte[] response = Encoding.UTF8.GetBytes("Registration Successful");
-                    stream.Write(response, 0, response.Length);
-                }
-                else if (details.Length == 2) // Đối với đăng nhập
-                {
-                    string username = details[0];
-                    string password = PasswordHandler.HashPassword(details[1]);
-
-                    // Kiểm tra thông tin đăng nhập với cơ sở dữ liệu
-                    string loginQuery = "SELECT COUNT(*) FROM Register WHERE username = @username AND password = @password";
-                    using (SqlCommand cmd = new SqlCommand(loginQuery, sqlConnection))
-                    {
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", password);
-
-                        int userCount = (int)cmd.ExecuteScalar();
-
-                        // Gửi phản hồi về client
-                        string responseMessage = userCount > 0 ? "Success" : "Invalid Username or Password";
-                        byte[] responseData = Encoding.UTF8.GetBytes(responseMessage);
-                        stream.Write(responseData, 0, responseData.Length);
-
-                        // Cập nhật giao diện hiển thị
-                        Invoke(new Action(() =>
-                        {
-                            if (userCount > 0)
-                            {
-                                lstChat.Items.Add($"User {username} has logged in.");
-                            }
-                            else
-                            {
-                                lstChat.Items.Add($"Failed login attempt for user {username}.");
-                            }
-                        }));
-                    }
+                    case "VERIFY_ACCOUNT":
+                        HandleVerifyAccount(details, stream);
+                        break;
+                    case "RESET":
+                        HandleReset(details, stream);
+                        break;
                 }
             }
         }
+        private void HandleVerifyAccount(string[] details, NetworkStream stream)
+        {
+            string username = details[1];
+            string email = details[2];
 
+            string resetQuery = "SELECT COUNT(*) FROM Register WHERE username = @username AND email = @email";
+            using (SqlCommand cmd = new SqlCommand(resetQuery, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@email", email);
+
+                int userCount = (int)cmd.ExecuteScalar();
+                string responseMessage = userCount > 0 ? "Success" : "Invalid Username or Email";
+                byte[] responseData = Encoding.UTF8.GetBytes(responseMessage);
+                stream.Write(responseData, 0, responseData.Length);
+                stream.Flush();
+
+                // Log cho debug
+                Console.WriteLine($"Reset attempt for user {username}: {responseMessage}");
+            }
+        }
+
+        private void HandleReset (string[] details, NetworkStream stream)
+        {
+            string email = details[1];
+            string password = details[2];
+
+            //Đổi mật khẩu người dùng
+            string resetPasswordQuery = "UPDATE Register SET password = @password WHERE email = @email";
+            using (SqlCommand cmd = new SqlCommand(resetPasswordQuery, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("@password", password);
+                cmd.Parameters.AddWithValue("@email", email);
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                string responseMessage = rowsAffected > 0 ? "Success" : "Fail reset password";
+                byte[] responseData = Encoding.UTF8.GetBytes (responseMessage);
+                stream.Write(responseData , 0, responseData.Length);
+                stream.Flush();
+            }
+            // Cập nhật giao diện hiển thị
+            Invoke(new Action(() =>
+            {
+                lstChat.Items.Add($"User {email} has changed password.");
+            }));
+        }
+        private void HandleRegistration(string[] details, NetworkStream stream)
+        {
+            string username = details[1];
+            string email = details[2];
+            string password = details[3];
+
+            // Kiểm tra username đã tồn tại
+            string checkEmail = "SELECT COUNT(*) FROM Register WHERE email = @email";
+            using (SqlCommand cmdCheck = new SqlCommand(checkEmail, sqlConnection))
+            {
+                cmdCheck.Parameters.AddWithValue("@email", email);
+                int userCount = (int)cmdCheck.ExecuteScalar();
+                if (userCount > 0)
+                {
+                    byte[] responseData = Encoding.UTF8.GetBytes("Email already exists");
+                    stream.Write(responseData, 0, responseData.Length);
+                    return;
+                }
+            }
+
+            // Lưu thông tin người dùng
+            string registerQuery = "INSERT INTO Register (username, email, password) VALUES (@username, @email, @password)";
+            using (SqlCommand cmd = new SqlCommand(registerQuery, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@password", password);
+                cmd.ExecuteNonQuery(); //Thực thi câu lệnh
+            }
+
+            // Cập nhật giao diện hiển thị
+            Invoke(new Action(() =>
+            {
+                lstChat.Items.Add($"User {username} has signed up.");
+            }));
+
+            // Gửi phản hồi cho client
+            byte[] response = Encoding.UTF8.GetBytes("Registration Successful");
+            stream.Write(response, 0, response.Length);
+        }
+
+        private void HandleLogin(string[] details, NetworkStream stream)
+        {
+            string email = details[1];
+            string password = PasswordHandler.HashPassword(details[2]);
+
+            // Kiểm tra thông tin đăng nhập với cơ sở dữ liệu
+            string loginQuery = "SELECT COUNT(*) FROM Register WHERE email = @email AND password = @password";
+            using (SqlCommand cmd = new SqlCommand(loginQuery, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                int userCount = (int)cmd.ExecuteScalar();
+
+                // Gửi phản hồi về client
+                string responseMessage = userCount > 0 ? "Success" : "Invalid Username or Password";
+                byte[] responseData = Encoding.UTF8.GetBytes(responseMessage);
+                stream.Write(responseData, 0, responseData.Length);
+
+                // Cập nhật giao diện hiển thị
+                Invoke(new Action(() =>
+                {
+                    if (userCount > 0)
+                    {
+                        lstChat.Items.Add($"User {email} has logged in.");
+                    }
+                    else
+                    {
+                        lstChat.Items.Add($"Failed login attempt for user {email}.");
+                    }
+                }));
+            }
+        }
         public static class PasswordHandler
         {
             public static string HashPassword(string password)

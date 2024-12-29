@@ -12,14 +12,14 @@ namespace LoginForm
 {
     public partial class Dashboard : Form
     {
-        private string username;
+        private string email;
         private int userId; // Thêm ID người dùng
 
-        public Dashboard(string username)
+        public Dashboard(string email)
         {
             InitializeComponent();
-            this.username = username;
-            lblName.Text = username;
+            this.email = email;
+            lblName.Text = email;
 
         }
 
