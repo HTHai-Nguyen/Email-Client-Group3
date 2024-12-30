@@ -35,9 +35,9 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.listEmail = new System.Windows.Forms.ListView();
             this.From = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.To = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Subject = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.To = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.picPen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,30 +129,29 @@
             this.listEmail.TabIndex = 29;
             this.listEmail.UseCompatibleStateImageBehavior = false;
             this.listEmail.View = System.Windows.Forms.View.Details;
+            this.listEmail.SelectedIndexChanged += new System.EventHandler(this.listEmail_SelectedIndexChanged);
             // 
             // From
             // 
             this.From.Text = "From";
             this.From.Width = 300;
             // 
-            // Subject
-            // 
-            this.Subject.DisplayIndex = 1;
-            this.Subject.Text = "Subject";
-            this.Subject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Subject.Width = 500;
-            // 
-            // Date
-            // 
-            this.Date.DisplayIndex = 2;
-            this.Date.Text = "Date";
-            this.Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Date.Width = 170;
-            // 
             // To
             // 
             this.To.Text = "To";
             this.To.Width = 238;
+            // 
+            // Subject
+            // 
+            this.Subject.Text = "Subject";
+            this.Subject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Subject.Width = 250;
+            // 
+            // Date
+            // 
+            this.Date.Text = "Date";
+            this.Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Date.Width = 170;
             // 
             // ListEmails
             // 

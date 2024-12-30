@@ -77,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailEmail.Designer.cs">
+      <DependentUpon>DetailEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmailClass.cs" />
     <Compile Include="ComposeForm.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="ComposeForm.resx">
       <DependentUpon>ComposeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailEmail.resx">
+      <DependentUpon>DetailEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

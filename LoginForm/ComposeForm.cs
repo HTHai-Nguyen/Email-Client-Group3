@@ -22,6 +22,12 @@ namespace LoginForm
             InitializeComponent();
             fromEmail = email;
         }
+        public ComposeForm(string FromEmail, string ToEmail)
+        {
+            InitializeComponent();
+            fromEmail = FromEmail;
+            txtTo.Text = ToEmail;
+        }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -32,32 +38,6 @@ namespace LoginForm
         {
             Application.Exit();
         }
-
-        //private void btnSend_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        // Tạo email mới từ dữ liệu reply
-        //        Email composeEmail = new Email
-        //        {
-        //            Subject = lblSubject.Text,
-        //            Content = txtBody.Text,
-        //            Date = DateTime.Now
-        //        };
-
-
-        //        MessageBox.Show("Email sent successfully!", "Success",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        this.Close();
-        //        new ListEmails().Show();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error sending email: " + ex.Message, "Error",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
-
         private void btnSend_Click_1(object sender, EventArgs e)
         {
             

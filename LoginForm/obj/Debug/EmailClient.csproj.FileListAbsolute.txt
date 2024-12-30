@@ -37,3 +37,4 @@ D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\LoginForm\bin\Debug\S
 D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\LoginForm\obj\Debug\EmailCli.6855ED27.Up2Date
 D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.exe
 D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.pdb
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\LoginForm\obj\Debug\LoginForm.DetailEmail.resources

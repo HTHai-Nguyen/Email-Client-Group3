@@ -19,6 +19,7 @@ namespace LoginForm
     public partial class ListEmails : Form
     {
         private string email;
+        private List<Email> emailList = new List<Email>();
         //private int userID;
         public ListEmails(string email)
         {
@@ -44,77 +45,6 @@ namespace LoginForm
             new Login().Show();
             this.Hide();
         }
-
-        private void list_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (listEmail.SelectedItems.Count > 0)
-            //{
-            //    Email selectedEmail = (Email)listEmail.SelectedItems[0].Tag;
-
-            //    // Tạo và hiển thị form chi tiết
-            //    DetailForm detailForm = new DetailForm(selectedEmail);
-            //    detailForm.ShowDialog(this); // Sử dụng ShowDialog để chặn form list
-
-            //}
-            
-        }
-
-        private List<Email> emails;
-
-
-        //Lấy tạm sample để test thử tính năng đọc email
-        //private void LoadSampleEmails()
-        //{
-        //    emails = new List<Email>
-        //{
-        //    new Email
-        //    {
-        //        From = "hai1212@email.com",
-        //        Subject = "New application",
-        //        Date = DateTime.Now,
-        //        Content = "Hi,\n\nThere is a Test for New app EMail Client.\n\nThank you"
-        //    },
-        //    new Email
-        //    {
-        //        From = "alice@email.com",
-        //        Subject = "Project Update",
-        //        Date = DateTime.Now.AddHours(-1),
-        //        Content = "Hello,\n\nHere's the latest project update...\n\nRegards"
-        //    },
-        //    new Email
-        //    {
-        //        From = "ice799@email.com",
-        //        Subject = "Project Fix",
-        //        Date = DateTime.Now.AddHours(-1),
-        //        Content = "Hello,\n\nFix bug...\n"
-        //    },
-        //    new Email
-        //    {
-        //        From = "ellonmusk@email.com",
-        //        Subject = "Create newTesla ",
-        //        Date = DateTime.Now.AddHours(-1),
-        //        Content = "Hello,\n\nHere's The Tesla car \n\nRegards"
-        //    },
-        //    new Email
-        //    {
-        //        From = "hacker6969@email.com",
-        //        Subject = "Your computer has Viruss",
-        //        Date = DateTime.Now.AddHours(-1),
-        //        Content = "Hello World,\n\nSay goodbye your computer =]]]]\n\n GOODBYE"
-        //    }
-        //};
-
-        //    foreach (var email in emails)
-        //    {
-        //        ListViewItem item = new ListViewItem(email.From);
-        //        item.SubItems.Add(email.Subject);
-        //        item.SubItems.Add(email.Date.ToString("g"));
-        //        item.Tag = email;
-        //        listEmail.Items.Add(item);
-        //    }
-        //}
-
-        
 
         private void ListEmails_Load(object sender, EventArgs e)
         {
@@ -143,55 +73,25 @@ namespace LoginForm
                         string json = Encoding.UTF8.GetString(ms.ToArray());
 
                         // Deserialize JSON thành danh sách
-                        var emailList = JsonSerializer.Deserialize<List<Email>>(json);
-                        // Hiển thị danh sách trên giao diện
+                        emailList = JsonSerializer.Deserialize<List<Email>>(json);
+                        // Hiển thị danh sách email trên giao diện
                         foreach (var email in emailList)
                         {
-                            listEmail.Items.Add(new ListViewItem(new string[]
+                            var listViewItem = new ListViewItem(new string[]
                             {
-                            email.From,
-                            email.To,
-                            email.Subject,
-                            email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
-                            }));
+                                email.From,
+                                email.To,
+                                email.Subject,
+                                email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
+                            });
+
+                            // Gán đối tượng email đầy đủ vào Tag
+                            listViewItem.Tag = email;
+
+                            // Thêm vào ListView
+                            listEmail.Items.Add(listViewItem);
                         }
                     }
-
-                    //byte[] buffer = new byte[8192]; // Kích thước buffer
-                    //int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    //string json = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    //if (!string.IsNullOrEmpty(json))
-                    //{
-                    //    try
-                    //    {
-                    //        var emailList = JsonSerializer.Deserialize<List<Email>>(json);
-                    //        // Hiển thị danh sách trên giao diện
-                    //        foreach (var email in emailList)
-                    //        {
-                    //            listEmail.Items.Add(new ListViewItem(new string[]
-                    //            {
-                    //        email.From,
-                    //        email.To,
-                    //        email.Subject,
-                    //        email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
-                    //            }));
-                    //        }
-                    //    }
-                    //    catch (JsonException ex)
-                    //    {
-                    //        MessageBox.Show("Error parsing JSON: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("No data received from server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //}
-
-                    // Deserialize JSON thành danh sách
-                    //var emailList = JsonSerializer.Deserialize<List<Email>>(json);
-
-                    // Hiển thị danh sách trên giao diện
-
                 }
             }
             catch (Exception ex)
@@ -204,23 +104,18 @@ namespace LoginForm
         {
             new ComposeForm(email).Show();
         }
-        private void ValidateJSON (string json)
+
+        private void listEmail_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(json))
+            if (listEmail.SelectedItems.Count > 0)
             {
-                try
-                {
-                    var emailList = JsonSerializer.Deserialize<List<Email>>(json);
-                    // Hiển thị danh sách trên giao diện
-                }
-                catch (JsonException ex)
-                {
-                    MessageBox.Show("Error parsing JSON: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("No data received from server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Lấy email được chọn
+                var selectedItem = listEmail.SelectedItems[0];
+                var email = (Email)selectedItem.Tag;
+
+                // Mở form hiển thị nội dung email
+                DetailEmail detailForm = new DetailEmail(email);
+                detailForm.ShowDialog();
             }
         }
     }
