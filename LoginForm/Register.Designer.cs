@@ -106,7 +106,7 @@ namespace LoginForm
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.21818F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Teal;
             this.txtUsername.Location = new System.Drawing.Point(0, 0);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(500, 46);
             this.txtUsername.TabIndex = 0;
@@ -117,7 +117,7 @@ namespace LoginForm
             this.pnlPassword.Controls.Add(this.txtPassword);
             this.pnlPassword.ForeColor = System.Drawing.Color.White;
             this.pnlPassword.Location = new System.Drawing.Point(728, 405);
-            this.pnlPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPassword.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPassword.Name = "pnlPassword";
             this.pnlPassword.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlPassword.Size = new System.Drawing.Size(500, 55);
@@ -131,7 +131,7 @@ namespace LoginForm
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.21818F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Teal;
             this.txtPassword.Location = new System.Drawing.Point(0, 0);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(500, 46);
@@ -155,7 +155,7 @@ namespace LoginForm
             this.pnlUsername.Controls.Add(this.txtUsername);
             this.pnlUsername.ForeColor = System.Drawing.Color.White;
             this.pnlUsername.Location = new System.Drawing.Point(728, 160);
-            this.pnlUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlUsername.Margin = new System.Windows.Forms.Padding(4);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlUsername.Size = new System.Drawing.Size(500, 55);
@@ -184,7 +184,7 @@ namespace LoginForm
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(761, 639);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(383, 66);
             this.btnRegister.TabIndex = 5;
@@ -210,7 +210,7 @@ namespace LoginForm
             this.pnlConfirmPass.Controls.Add(this.txtConfirmPass);
             this.pnlConfirmPass.ForeColor = System.Drawing.Color.White;
             this.pnlConfirmPass.Location = new System.Drawing.Point(728, 537);
-            this.pnlConfirmPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlConfirmPass.Margin = new System.Windows.Forms.Padding(4);
             this.pnlConfirmPass.Name = "pnlConfirmPass";
             this.pnlConfirmPass.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlConfirmPass.Size = new System.Drawing.Size(500, 55);
@@ -224,7 +224,7 @@ namespace LoginForm
             this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.21818F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPass.ForeColor = System.Drawing.Color.Teal;
             this.txtConfirmPass.Location = new System.Drawing.Point(0, 0);
-            this.txtConfirmPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.PasswordChar = '*';
             this.txtConfirmPass.Size = new System.Drawing.Size(500, 46);
@@ -236,7 +236,7 @@ namespace LoginForm
             this.pnlEmail.Controls.Add(this.txtEmail);
             this.pnlEmail.ForeColor = System.Drawing.Color.White;
             this.pnlEmail.Location = new System.Drawing.Point(725, 281);
-            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEmail.Name = "pnlEmail";
             this.pnlEmail.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlEmail.Size = new System.Drawing.Size(500, 55);
@@ -250,7 +250,7 @@ namespace LoginForm
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.21818F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Teal;
             this.txtEmail.Location = new System.Drawing.Point(0, 0);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(500, 46);
             this.txtEmail.TabIndex = 1;
@@ -275,7 +275,7 @@ namespace LoginForm
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
             this.btnClose.Location = new System.Drawing.Point(1213, -2);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(67, 62);
             this.btnClose.TabIndex = 9;
@@ -289,7 +289,7 @@ namespace LoginForm
             this.pictEmail.BackColor = System.Drawing.SystemColors.Control;
             this.pictEmail.Image = global::LoginForm.Properties.Resources.mail;
             this.pictEmail.Location = new System.Drawing.Point(669, 281);
-            this.pictEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictEmail.Margin = new System.Windows.Forms.Padding(4);
             this.pictEmail.Name = "pictEmail";
             this.pictEmail.Size = new System.Drawing.Size(55, 55);
             this.pictEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -300,7 +300,7 @@ namespace LoginForm
             // 
             this.pictureBox1.Image = global::LoginForm.Properties.Resources.Wallpaper_031;
             this.pictureBox1.Location = new System.Drawing.Point(-7, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(664, 825);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -314,7 +314,7 @@ namespace LoginForm
             this.picUsername.BackColor = System.Drawing.SystemColors.Control;
             this.picUsername.Image = global::LoginForm.Properties.Resources.user;
             this.picUsername.Location = new System.Drawing.Point(672, 160);
-            this.picUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picUsername.Margin = new System.Windows.Forms.Padding(4);
             this.picUsername.Name = "picUsername";
             this.picUsername.Size = new System.Drawing.Size(55, 55);
             this.picUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -327,7 +327,7 @@ namespace LoginForm
             this.picConfirmPass.BackColor = System.Drawing.SystemColors.Control;
             this.picConfirmPass.Image = global::LoginForm.Properties.Resources.padlock;
             this.picConfirmPass.Location = new System.Drawing.Point(672, 537);
-            this.picConfirmPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picConfirmPass.Margin = new System.Windows.Forms.Padding(4);
             this.picConfirmPass.Name = "picConfirmPass";
             this.picConfirmPass.Size = new System.Drawing.Size(55, 55);
             this.picConfirmPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -340,7 +340,7 @@ namespace LoginForm
             this.picPassword.BackColor = System.Drawing.SystemColors.Control;
             this.picPassword.Image = global::LoginForm.Properties.Resources.key;
             this.picPassword.Location = new System.Drawing.Point(672, 405);
-            this.picPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picPassword.Margin = new System.Windows.Forms.Padding(4);
             this.picPassword.Name = "picPassword";
             this.picPassword.Size = new System.Drawing.Size(55, 55);
             this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -371,7 +371,7 @@ namespace LoginForm
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.picPassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";

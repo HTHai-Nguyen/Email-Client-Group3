@@ -16,6 +16,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Text.Json;
+
 namespace Server
 {
     public partial class Form1 : Form
@@ -30,7 +33,7 @@ namespace Server
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Thanh\[4.2]NETWORK-PROGRAMMING\DoAn1\Email-Client-Group3\Server\Server\ServerDatabase.mdf;Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Thanh\[4.2]NETWORK-PROGRAMMING\DOAN\Email-Client-Group3\Server\Server\ServerDatabase.mdf;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
 
             try
@@ -91,6 +94,102 @@ namespace Server
                     case "RESET":
                         HandleReset(details, stream);
                         break;
+                    case "ACCOUNT_INFO":
+                        HandleInfo(details, stream);
+                        break;
+                    case "SEND":
+                        HandleSending(details, stream);
+                        break;
+                    case "RECEIVE":
+                        HandleReceive(details, stream);
+                        break;
+                }
+            }
+        }
+        private void HandleReceive(string[] details, NetworkStream stream)
+        {
+            string email = details[1];
+
+            string query = "SELECT (*) FROM Emails WHERE email = @email";
+            using (SqlCommand cmd = new SqlCommand(query, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("email", email);
+
+                List<EmailClass> emailList = new List<EmailClass>();
+                //Thực hiện câu lệnh
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    // Kiểm tra và đọc dữ liệu
+                    while (reader.Read())
+                    {
+                        // Lấy dữ liệu từ từng cột
+                        emailList.Add(new EmailClass
+                        {
+                            From = reader["FromEmail"].ToString(),
+                            To = reader["ToEmail"].ToString(),
+                            Subject = reader["Subject"].ToString(),
+                            Body = reader["Body"].ToString(),
+                            SentTime = (DateTime)reader["SentTime"]
+                        });
+
+                    }
+                    // Chuyển thành JSON một lần
+                    string json = JsonSerializer.Serialize(emailList);
+                    byte[] data = Encoding.UTF8.GetBytes(json);
+                    stream.Write(data, 0, data.Length);  // Gửi toàn bộ danh sách JSON
+                }
+            }
+        }
+        private void HandleSending(string[] details, NetworkStream stream)
+        {
+            EmailClass email = new EmailClass
+            {
+                From = details[1],
+                To = details[2],
+                Subject = details[3],
+                Body = details[4],
+                SentTime = DateTime.Now
+            };
+
+            //Lưu email vào database
+            string query = @"INSERT INTO Emails (FromEmail, ToEmail, Subject, Body, SentTime) VALUES (@FromEmail, @ToEmail, @Subject, @Body, @SentTime);";
+            using (SqlCommand cmd = new SqlCommand(query, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("@FromEmail", email.From);
+                cmd.Parameters.AddWithValue("@ToEmail", email.To);
+                cmd.Parameters.AddWithValue("@Subject", email.Subject);
+                cmd.Parameters.AddWithValue("@Body", email.Body);
+                cmd.Parameters.AddWithValue("@SentTime", email.SentTime);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                string responseMessage = rowsAffected > 0 ? "Success" : "Fail send email";
+                byte[] responseData = Encoding.UTF8.GetBytes(responseMessage);
+                stream.Write(responseData, 0, responseData.Length);
+                stream.Flush();
+            }
+        }
+        private void HandleInfo(string[] details, NetworkStream stream)
+        {
+            string email = details[1];
+
+            string infoQuery = "SELECT (*) FROM Register WHERE email = @email";
+            using (SqlCommand cmd = new SqlCommand(infoQuery, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("email", email);
+                //Thực hiện câu lệnh
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    // Kiểm tra và đọc dữ liệu
+                    while (reader.Read())
+                    {
+                        // Lấy dữ liệu từ từng cột
+                        string username = reader["username"].ToString();
+
+                        //int userCount = (int)cmd.ExecuteScalar();
+                        string responseMessage =  username != null ? $"{username}" : "Invalid Username or Email";
+                        byte[] responseData = Encoding.UTF8.GetBytes(username);
+                    }
                 }
             }
         }

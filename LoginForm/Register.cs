@@ -78,6 +78,8 @@ namespace LoginForm
                     if (responseMessage == "Registration Successful")
                     {
                         ClearFields();
+                        this.Hide();
+                        new Login().Show();
                     }
                 }
             }

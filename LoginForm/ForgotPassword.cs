@@ -43,7 +43,7 @@ namespace LoginForm
                     byte[] responseData = new byte[256];
                     int bytes = stream.Read(responseData, 0, responseData.Length);
                     string responseMessage = Encoding.UTF8.GetString(responseData, 0, bytes);
-                    lbTest.Text = responseMessage;
+                    //lbTest.Text = responseMessage;
 
                     if (responseMessage == "Success")
                     {

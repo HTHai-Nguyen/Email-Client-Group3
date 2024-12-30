@@ -53,9 +53,10 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtName.Location = new System.Drawing.Point(129, 62);
+            this.txtName.Location = new System.Drawing.Point(172, 76);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(347, 24);
+            this.txtName.Size = new System.Drawing.Size(461, 28);
             this.txtName.TabIndex = 0;
             // 
             // label1
@@ -63,18 +64,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(39, 28);
+            this.label1.Location = new System.Drawing.Point(52, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 18);
+            this.label1.Size = new System.Drawing.Size(55, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "From";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 161);
+            this.label2.Location = new System.Drawing.Point(71, 198);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 2;
             // 
             // label3
@@ -82,9 +85,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(39, 61);
+            this.label3.Location = new System.Drawing.Point(52, 75);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 18);
+            this.label3.Size = new System.Drawing.Size(61, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Name";
             // 
@@ -93,9 +97,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(39, 94);
+            this.label4.Location = new System.Drawing.Point(52, 116);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 18);
+            this.label4.Size = new System.Drawing.Size(33, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "To";
             // 
@@ -104,9 +109,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(39, 127);
+            this.label5.Location = new System.Drawing.Point(52, 156);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 18);
+            this.label5.Size = new System.Drawing.Size(73, 24);
             this.label5.TabIndex = 5;
             this.label5.Text = "Subject";
             // 
@@ -115,9 +121,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(40, 160);
+            this.label6.Location = new System.Drawing.Point(53, 197);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 18);
+            this.label6.Size = new System.Drawing.Size(53, 24);
             this.label6.TabIndex = 6;
             this.label6.Text = "Body";
             // 
@@ -125,35 +132,39 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label7.Location = new System.Drawing.Point(125, 27);
+            this.label7.Location = new System.Drawing.Point(168, 34);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 18);
+            this.label7.Size = new System.Drawing.Size(37, 24);
             this.label7.TabIndex = 7;
             this.label7.Text = "me";
             // 
             // txtRecipient
             // 
             this.txtRecipient.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtRecipient.Location = new System.Drawing.Point(129, 95);
+            this.txtRecipient.Location = new System.Drawing.Point(172, 117);
+            this.txtRecipient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecipient.Name = "txtRecipient";
-            this.txtRecipient.Size = new System.Drawing.Size(347, 24);
+            this.txtRecipient.Size = new System.Drawing.Size(461, 28);
             this.txtRecipient.TabIndex = 8;
             // 
             // txtSubject
             // 
             this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtSubject.Location = new System.Drawing.Point(129, 128);
+            this.txtSubject.Location = new System.Drawing.Point(172, 158);
+            this.txtSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(347, 24);
+            this.txtSubject.Size = new System.Drawing.Size(461, 28);
             this.txtSubject.TabIndex = 9;
             // 
             // txtBody
             // 
             this.txtBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtBody.Location = new System.Drawing.Point(129, 161);
+            this.txtBody.Location = new System.Drawing.Point(172, 198);
+            this.txtBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(347, 229);
+            this.txtBody.Size = new System.Drawing.Size(461, 281);
             this.txtBody.TabIndex = 10;
             // 
             // label8
@@ -161,27 +172,30 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(33, 404);
+            this.label8.Location = new System.Drawing.Point(44, 497);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 18);
+            this.label8.Size = new System.Drawing.Size(113, 24);
             this.label8.TabIndex = 11;
             this.label8.Text = "Attachments";
             // 
             // txtAttachments
             // 
             this.txtAttachments.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtAttachments.Location = new System.Drawing.Point(129, 405);
+            this.txtAttachments.Location = new System.Drawing.Point(172, 498);
+            this.txtAttachments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAttachments.Name = "txtAttachments";
             this.txtAttachments.ReadOnly = true;
-            this.txtAttachments.Size = new System.Drawing.Size(290, 24);
+            this.txtAttachments.Size = new System.Drawing.Size(385, 28);
             this.txtAttachments.TabIndex = 12;
             // 
             // btnClearAttachments
             // 
             this.btnClearAttachments.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnClearAttachments.Location = new System.Drawing.Point(418, 403);
+            this.btnClearAttachments.Location = new System.Drawing.Point(557, 496);
+            this.btnClearAttachments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearAttachments.Name = "btnClearAttachments";
-            this.btnClearAttachments.Size = new System.Drawing.Size(58, 27);
+            this.btnClearAttachments.Size = new System.Drawing.Size(77, 33);
             this.btnClearAttachments.TabIndex = 16;
             this.btnClearAttachments.Text = "Clear";
             this.btnClearAttachments.UseVisualStyleBackColor = true;
@@ -190,9 +204,10 @@
             // picSend
             // 
             this.picSend.Image = global::LoginForm.Properties.Resources.send_icon;
-            this.picSend.Location = new System.Drawing.Point(436, 445);
+            this.picSend.Location = new System.Drawing.Point(581, 548);
+            this.picSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSend.Name = "picSend";
-            this.picSend.Size = new System.Drawing.Size(32, 32);
+            this.picSend.Size = new System.Drawing.Size(43, 39);
             this.picSend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSend.TabIndex = 15;
             this.picSend.TabStop = false;
@@ -201,9 +216,10 @@
             // picImage
             // 
             this.picImage.Image = global::LoginForm.Properties.Resources.image_icon;
-            this.picImage.Location = new System.Drawing.Point(386, 445);
+            this.picImage.Location = new System.Drawing.Point(515, 548);
+            this.picImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(32, 32);
+            this.picImage.Size = new System.Drawing.Size(43, 39);
             this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImage.TabIndex = 14;
             this.picImage.TabStop = false;
@@ -212,9 +228,10 @@
             // picAttachment
             // 
             this.picAttachment.Image = global::LoginForm.Properties.Resources.attachment_icon;
-            this.picAttachment.Location = new System.Drawing.Point(336, 445);
+            this.picAttachment.Location = new System.Drawing.Point(448, 548);
+            this.picAttachment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picAttachment.Name = "picAttachment";
-            this.picAttachment.Size = new System.Drawing.Size(32, 32);
+            this.picAttachment.Size = new System.Drawing.Size(43, 39);
             this.picAttachment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAttachment.TabIndex = 13;
             this.picAttachment.TabStop = false;
@@ -222,9 +239,9 @@
             // 
             // EmailCompose
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 501);
+            this.ClientSize = new System.Drawing.Size(705, 617);
             this.Controls.Add(this.btnClearAttachments);
             this.Controls.Add(this.picSend);
             this.Controls.Add(this.picImage);
@@ -242,6 +259,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EmailCompose";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Email Compose";

@@ -18,7 +18,7 @@ namespace LoginForm
         {
             InitializeComponent();
             this.email = email;
-            lbTest.Text = email;
+            //lbTest.Text = email;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

@@ -75,7 +75,7 @@ namespace LoginForm
 
                     if (responseMessage == "Success")
                     {
-                        Dashboard dashboard = new Dashboard(email); // Truyền username
+                        Home dashboard = new Home(email); // Truyền username
                         this.Hide();
                         dashboard.Show();
                     }
@@ -138,6 +138,11 @@ namespace LoginForm
                    hasUpperChar.IsMatch(password) &&
                    hasLowerChar.IsMatch(password) &&
                    hasSymbols.IsMatch(password);
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

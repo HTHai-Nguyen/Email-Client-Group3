@@ -72,9 +72,10 @@ namespace LoginForm
             this.lblUsername.Location = new System.Drawing.Point(665, 206);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(147, 31);
+            this.lblUsername.Size = new System.Drawing.Size(86, 31);
             this.lblUsername.TabIndex = 2;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Email";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // lblDontHave
             // 
