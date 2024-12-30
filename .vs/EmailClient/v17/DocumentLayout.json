@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\composeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\composeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\detailemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\detailemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\detailemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\detailemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\detailemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\composeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\composeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\composeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\listemails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|d:\\thanh\\[4.2]network-programming\\doan\\email-client-group3\\loginform\\listemails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\listemails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\listemails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\replyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\replyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|solutionrelative:loginform\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10B4A21B-D495-4116-A4B7-C2BF444A3F3E}|LoginForm\\EmailClient.csproj|D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\loginform\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -70,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +90,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPassword.cs",
+              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs",
+              "RelativeDocumentMoniker": "LoginForm\\ResetPassword.cs",
+              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs",
+              "RelativeToolTip": "LoginForm\\ResetPassword.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T22:01:14.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\Home.cs",
+              "RelativeDocumentMoniker": "LoginForm\\Home.cs",
+              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\Home.cs",
+              "RelativeToolTip": "LoginForm\\Home.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:50:27.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ComposeForm.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ComposeForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\ComposeForm.cs",
               "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ComposeForm.cs",
               "RelativeToolTip": "LoginForm\\ComposeForm.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T21:23:35.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "DetailEmail.cs",
+              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\DetailEmail.cs",
+              "RelativeDocumentMoniker": "LoginForm\\DetailEmail.cs",
+              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\DetailEmail.cs",
+              "RelativeToolTip": "LoginForm\\DetailEmail.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:19:38.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResetPassword.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs",
+              "RelativeDocumentMoniker": "LoginForm\\ResetPassword.cs",
+              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs [Design]",
+              "RelativeToolTip": "LoginForm\\ResetPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:16:19.9Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DetailEmail.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\DetailEmail.cs",
               "RelativeDocumentMoniker": "LoginForm\\DetailEmail.cs",
@@ -107,32 +166,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DetailEmail.cs",
-              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\DetailEmail.cs",
-              "RelativeDocumentMoniker": "LoginForm\\DetailEmail.cs",
-              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\DetailEmail.cs",
-              "RelativeToolTip": "LoginForm\\DetailEmail.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T21:19:38.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ListEmails.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ListEmails.cs",
               "RelativeDocumentMoniker": "LoginForm\\ListEmails.cs",
               "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ListEmails.cs [Design]",
               "RelativeToolTip": "LoginForm\\ListEmails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T21:03:18.485Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-30T21:03:18.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ComposeForm.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ComposeForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\ComposeForm.cs",
@@ -144,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ListEmails.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ListEmails.cs",
               "RelativeDocumentMoniker": "LoginForm\\ListEmails.cs",
@@ -152,12 +197,11 @@
               "RelativeToolTip": "LoginForm\\ListEmails.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA/wCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T21:04:31.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T21:04:31.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ReplyForm.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ReplyForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\ReplyForm.cs",
@@ -168,18 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ResetPassword.cs [Design]",
-              "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs",
-              "RelativeDocumentMoniker": "LoginForm\\ResetPassword.cs",
-              "ToolTip": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ResetPassword.cs [Design]",
-              "RelativeToolTip": "LoginForm\\ResetPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T19:16:19.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "EmailClass.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\EmailClass.cs",
               "RelativeDocumentMoniker": "LoginForm\\EmailClass.cs",
@@ -191,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ForgotPassword.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ForgotPassword.cs",
               "RelativeDocumentMoniker": "LoginForm\\ForgotPassword.cs",
@@ -202,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "EmailCompose.cs [Design]",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\EmailCompose.cs",
               "RelativeDocumentMoniker": "LoginForm\\EmailCompose.cs",
@@ -213,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\Program.cs",
               "RelativeDocumentMoniker": "LoginForm\\Program.cs",
@@ -225,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\Login.cs",
               "RelativeDocumentMoniker": "LoginForm\\Login.cs",
@@ -237,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ReplyForm.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ReplyForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\ReplyForm.cs",
@@ -249,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ForgotPassword.cs",
               "DocumentMoniker": "D:\\Thanh\\[4.2]NETWORK-PROGRAMMING\\DOAN\\Email-Client-Group3\\LoginForm\\ForgotPassword.cs",
               "RelativeDocumentMoniker": "LoginForm\\ForgotPassword.cs",

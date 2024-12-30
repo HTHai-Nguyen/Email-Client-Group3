@@ -65,7 +65,7 @@ namespace LoginForm
                     {
                         //Dashboard dashboard = new Dashboard(username); // Truyền username
                         this.Hide();
-                        new ListEmails().Show();
+                        new ListEmails(fromEmail).Show();
                     }
                     else
                     {

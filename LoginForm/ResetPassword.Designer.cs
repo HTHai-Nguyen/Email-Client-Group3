@@ -78,6 +78,7 @@
             // 
             this.txtResetCfPassword.Location = new System.Drawing.Point(193, 138);
             this.txtResetCfPassword.Name = "txtResetCfPassword";
+            this.txtResetCfPassword.PasswordChar = '*';
             this.txtResetCfPassword.Size = new System.Drawing.Size(295, 22);
             this.txtResetCfPassword.TabIndex = 4;
             // 
