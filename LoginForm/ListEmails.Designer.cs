@@ -37,6 +37,7 @@
             this.From = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Subject = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.To = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.picPen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@
             this.btnCompose.Text = "Compose";
             this.btnCompose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCompose.UseVisualStyleBackColor = false;
+            this.btnCompose.Click += new System.EventHandler(this.btnCompose_Click_1);
             // 
             // lblListView
             // 
@@ -113,6 +115,7 @@
             // 
             this.listEmail.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.From,
+            this.To,
             this.Subject,
             this.Date});
             this.listEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,15 +137,22 @@
             // 
             // Subject
             // 
+            this.Subject.DisplayIndex = 1;
             this.Subject.Text = "Subject";
             this.Subject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Subject.Width = 500;
             // 
             // Date
             // 
+            this.Date.DisplayIndex = 2;
             this.Date.Text = "Date";
             this.Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Date.Width = 170;
+            // 
+            // To
+            // 
+            this.To.Text = "To";
+            this.To.Width = 238;
             // 
             // ListEmails
             // 
@@ -157,6 +167,7 @@
             this.Controls.Add(this.listEmail);
             this.Name = "ListEmails";
             this.Text = "ListEmail";
+            this.Load += new System.EventHandler(this.ListEmails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,5 +185,6 @@
         private System.Windows.Forms.ColumnHeader From;
         private System.Windows.Forms.ColumnHeader Subject;
         private System.Windows.Forms.ColumnHeader Date;
+        private System.Windows.Forms.ColumnHeader To;
     }
 }

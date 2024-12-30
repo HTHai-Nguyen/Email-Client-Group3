@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Text.Json;
 using LoginForm;
+using System.IO;
 //using Server;
 
 namespace LoginForm
@@ -55,44 +56,7 @@ namespace LoginForm
             //    detailForm.ShowDialog(this); // Sử dụng ShowDialog để chặn form list
 
             //}
-            try
-            {
-                using (TcpClient client = new TcpClient("127.0.0.1", 5000)) // Địa chỉ và cổng của TCPServer
-                {
-                    NetworkStream stream = client.GetStream();
-
-                    // Tạo chuỗi thông tin nhận
-                    string info = $"RECEIVE:{email}";
-                    byte[] data = Encoding.UTF8.GetBytes(info);
-                    //lbTest.Text = data.Length.ToString();
-
-                    // Gửi dữ liệu đến server
-                    stream.Write(data, 0, data.Length);
-
-                    byte[] buffer = new byte[8192]; // Kích thước buffer
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    string json = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                    // Deserialize JSON thành danh sách
-                    var emailList = JsonSerializer.Deserialize<List<Email>>(json);
-
-                    // Hiển thị danh sách trên giao diện
-                    foreach (var email in emailList)
-                    {
-                        listEmail.Items.Add(new ListViewItem(new string[]
-                        {
-                            email.From,
-                            email.To,
-                            email.Subject,
-                            email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
-                        }));
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error has occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private List<Email> emails;
@@ -150,9 +114,114 @@ namespace LoginForm
         //    }
         //}
 
-        private void btnCompose_Click(object sender, EventArgs e)
+        
+
+        private void ListEmails_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                using (TcpClient client = new TcpClient("127.0.0.1", 5000)) // Địa chỉ và cổng của TCPServer
+                {
+                    NetworkStream stream = client.GetStream();
+
+                    // Tạo chuỗi thông tin nhận
+                    string info = $"RECEIVE:{email}";
+                    byte[] data = Encoding.UTF8.GetBytes(info);
+                    //lbTest.Text = data.Length.ToString();
+
+                    // Gửi dữ liệu đến server
+                    stream.Write(data, 0, data.Length);
+                    //Stream liên tục
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        byte[] buffer = new byte[8192];
+                        int bytesRead;
+                        while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+                        {
+                            ms.Write(buffer, 0, bytesRead);
+                        }
+                        string json = Encoding.UTF8.GetString(ms.ToArray());
+
+                        // Deserialize JSON thành danh sách
+                        var emailList = JsonSerializer.Deserialize<List<Email>>(json);
+                        // Hiển thị danh sách trên giao diện
+                        foreach (var email in emailList)
+                        {
+                            listEmail.Items.Add(new ListViewItem(new string[]
+                            {
+                            email.From,
+                            email.To,
+                            email.Subject,
+                            email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
+                            }));
+                        }
+                    }
+
+                    //byte[] buffer = new byte[8192]; // Kích thước buffer
+                    //int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                    //string json = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    //if (!string.IsNullOrEmpty(json))
+                    //{
+                    //    try
+                    //    {
+                    //        var emailList = JsonSerializer.Deserialize<List<Email>>(json);
+                    //        // Hiển thị danh sách trên giao diện
+                    //        foreach (var email in emailList)
+                    //        {
+                    //            listEmail.Items.Add(new ListViewItem(new string[]
+                    //            {
+                    //        email.From,
+                    //        email.To,
+                    //        email.Subject,
+                    //        email.SentTime.ToString("yyyy-MM-dd HH:mm:ss")
+                    //            }));
+                    //        }
+                    //    }
+                    //    catch (JsonException ex)
+                    //    {
+                    //        MessageBox.Show("Error parsing JSON: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("No data received from server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //}
+
+                    // Deserialize JSON thành danh sách
+                    //var emailList = JsonSerializer.Deserialize<List<Email>>(json);
+
+                    // Hiển thị danh sách trên giao diện
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCompose_Click_1(object sender, EventArgs e)
         {
             new ComposeForm(email).Show();
+        }
+        private void ValidateJSON (string json)
+        {
+            if (!string.IsNullOrEmpty(json))
+            {
+                try
+                {
+                    var emailList = JsonSerializer.Deserialize<List<Email>>(json);
+                    // Hiển thị danh sách trên giao diện
+                }
+                catch (JsonException ex)
+                {
+                    MessageBox.Show("Error parsing JSON: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No data received from server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

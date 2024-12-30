@@ -110,10 +110,10 @@ namespace Server
         {
             string email = details[1];
 
-            string query = "SELECT (*) FROM Emails WHERE email = @email";
+            string query = "SELECT * FROM Emails WHERE FromEmail = @email OR ToEmail = @email";
             using (SqlCommand cmd = new SqlCommand(query, sqlConnection))
             {
-                cmd.Parameters.AddWithValue("email", email);
+                cmd.Parameters.AddWithValue("@email", email);
 
                 List<EmailClass> emailList = new List<EmailClass>();
                 //Thực hiện câu lệnh
@@ -125,11 +125,11 @@ namespace Server
                         // Lấy dữ liệu từ từng cột
                         emailList.Add(new EmailClass
                         {
-                            From = reader["FromEmail"].ToString(),
-                            To = reader["ToEmail"].ToString(),
-                            Subject = reader["Subject"].ToString(),
-                            Body = reader["Body"].ToString(),
-                            SentTime = (DateTime)reader["SentTime"]
+                            From = reader["FromEmail"] == DBNull.Value ? string.Empty : reader["FromEmail"].ToString(),
+                            To = reader["ToEmail"] == DBNull.Value ? string.Empty : reader["ToEmail"].ToString(),
+                            Subject = reader["Subject"] == DBNull.Value ? string.Empty : reader["Subject"].ToString(),
+                            Body = reader["Body"] == DBNull.Value ? string.Empty : reader["Body"].ToString(),
+                            SentTime = reader["SentTime"] == DBNull.Value ? DateTime.MinValue : (DateTime)reader["SentTime"]
                         });
 
                     }
@@ -137,6 +137,7 @@ namespace Server
                     string json = JsonSerializer.Serialize(emailList);
                     byte[] data = Encoding.UTF8.GetBytes(json);
                     stream.Write(data, 0, data.Length);  // Gửi toàn bộ danh sách JSON
+                    stream.Flush();
                 }
             }
         }
